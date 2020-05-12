@@ -26,7 +26,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~assets/styles.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -59,7 +59,9 @@ export default {
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3
+          success: colors.green.accent3,
+          primary_p: '#0588AA',
+          secondary_p: '#B4B4B4'
         }
       }
     }
