@@ -2,6 +2,13 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   mode: 'universal',
+
+  /* Server configuration */
+  server: {
+    port: 3000,
+    host: '192.168.50.96',
+    timing: false
+  },
   /*
    ** Headers of the page
    */
@@ -61,7 +68,8 @@ export default {
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
           primary_p: '#0588AA',
-          secondary_p: '#B4B4B4'
+          secondary_p: '#B4B4B4',
+          dark_p: '#131313'
         }
       }
     }

@@ -1,6 +1,6 @@
 <template>
-  <v-navigation-drawer app permanent class="back-nav">
-    <v-row class="flex-column py-5 mx-0 fill-height" align="center">
+  <v-navigation-drawer app absolute class="back-nav">
+    <v-row class="flex-column py-5 mx-0" align="center">
       <v-avatar height="80" width="80" min-width="50" tile>
         <v-img :src="getImage('logo')"></v-img>
       </v-avatar>

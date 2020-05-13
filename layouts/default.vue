@@ -3,7 +3,7 @@
     <!-- NAVIGATION DRAWER -->
     <NavDrawer />
     <v-content>
-      <v-img :src="require(`~/static/background.png`)" style="height: 100vh">
+      <v-img :src="require(`~/static/background.png`)" style="height: 100vh;">
         <nuxt />
       </v-img>
     </v-content>
