@@ -12,42 +12,50 @@
       xl="3"
       class="mx-0 px-0 text-center"
     >
-      <h1
-        class="title-p primary_p--text"
-        style="font-size: calc(0.94em + 0.94vw)"
-        >{{ item.name }}</h1
-      >
-      <v-hover v-slot:default="{ hover }">
-        <v-card
-          class="ma-auto dark_p"
-          width="90%"
-          max-width="350"
-          style="opacity: .9; background-color: initial!important;"
-        >
-          <v-img
-            :src="getImage(item.img)"
-            :alt="`${item.img}`"
-            width="350"
-            class="ma-auto"
+      <transition v-if="show" name="fade-in-bottom" appear>
+        <div>
+          <h1
+            class="title-p primary_p--text"
+            style="font-size: calc(0.94em + 0.94vw)"
+            >{{ item.name }}</h1
           >
-            <v-expand-transition>
-              <div
-                v-if="hover"
-                class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal display-3 white--text"
-                style="height: 100%;"
+
+          <v-hover v-slot:default="{ hover }">
+            <v-card
+              class="ma-auto dark_p"
+              width="90%"
+              max-width="350"
+              style="opacity: .9; background-color: initial!important;"
+            >
+              <v-img
+                :src="getImage(item.img)"
+                :alt="`${item.img}`"
+                width="350"
+                class="ma-auto"
               >
-                $14.99
-              </div>
-            </v-expand-transition>
-          </v-img>
-        </v-card>
-      </v-hover>
+                <v-expand-transition>
+                  <div
+                    v-if="hover"
+                    class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal display-3 white--text"
+                    style="height: 100%;"
+                  >
+                    $14.99
+                  </div>
+                </v-expand-transition>
+              </v-img>
+            </v-card>
+          </v-hover>
+        </div>
+      </transition>
     </v-col>
   </v-row>
 </template>
 
 <script>
 export default {
+  transition: {
+    name: 'fade'
+  },
   data() {
     return {
       projects: [
@@ -57,8 +65,12 @@ export default {
         { name: 'BudgetApp', img: 'budget-app' },
         { name: 'Tic, Tac, Toe', img: 'tic-tac-toe' },
         { name: 'Basic Calculator', img: 'basic-calculator' }
-      ]
+      ],
+      show: false
     }
+  },
+  mounted() {
+    this.show = true
   },
   methods: {
     getImage(name) {
