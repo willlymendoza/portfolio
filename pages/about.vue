@@ -10,18 +10,25 @@
       </transition>
       <transition v-if="show" name="bounce-in-bottom" appear>
         <div>
-          <p style="font-size: calc(0.63em + 0.63vw)"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quo
-            pariatur ipsa iusto cupiditate modi atque fuga quidem consectetur
-            molestias?</p
-          >
-          <p style="font-size: calc(0.63em + 0.63vw)"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quo
-            pariatur ipsa
+          <p class="text_p"
+            >I have been a software developer for about 4 years, I love giving
+            optimal solutions to clients and creating software that provide a
+            good experience when using it. I am specialized in languages such as
+            HTML, CSS, JavaScript and Vue.js framework, but I have also had
+            experience working with Laravel(PHP) and MySQL.
           </p>
-          <p style="font-size: calc(0.63em + 0.63vw)"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quo
-            pariatur ipsa iusto cupiditate modi atque
+          <p class="text_p"
+            >I have had the opportunity to work for local companies doing a
+            full-stack job as a freelancer and I have worked with a group of
+            developers for almost a year.
+          </p>
+          <p class="text_p">
+            I really like learning new things and recently I started learning
+            how to use Node.js with Express in order to create RESTFULL API'S.
+          </p>
+          <p class="text_p">
+            I like to hep and learn from others, teamwork helps you to improve
+            and learn faster.
           </p>
         </div>
       </transition>
@@ -45,4 +52,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.text_p {
+  font-size: calc(0.63em + 0.63vw);
+}
+</style>

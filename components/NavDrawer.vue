@@ -1,5 +1,11 @@
 <template>
-  <v-navigation-drawer app absolute class="back-nav">
+  <v-navigation-drawer
+    :value="drawer"
+    app
+    absolute
+    hide-overlay
+    class="back-nav"
+  >
     <v-row class="flex-column py-5 mx-0" align="center">
       <v-avatar height="80" width="80" min-width="50" tile>
         <v-img :src="getImage('logo')"></v-img>
@@ -43,6 +49,7 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
   data() {
     return {
@@ -65,6 +72,9 @@ export default {
         }
       ]
     }
+  },
+  computed: {
+    ...mapState('drawer', ['drawer'])
   },
   methods: {
     getImage(name) {

@@ -75,6 +75,7 @@ export default {
         'HTML',
         'CSS',
         'JAVASCRIPT',
+        'JQUERY',
         'VUE.JS &',
         'NUXT.JS',
         'VUETIFY',
