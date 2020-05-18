@@ -20,31 +20,47 @@
             >{{ item.name }}</h1
           >
 
-          <v-hover v-slot:default="{ hover }">
-            <v-card
-              class="ma-auto dark_p"
-              width="90%"
-              max-width="350"
-              style="opacity: .9; background-color: initial!important;"
+          <v-card
+            class="ma-auto dark_p"
+            width="90%"
+            max-width="350"
+            style="opacity: .9; background-color: initial!important;"
+            elevation="0"
+          >
+            <v-img
+              :src="getImage(item.img)"
+              :alt="`${item.img}`"
+              width="350"
+              height=""
+              class="ma-auto"
             >
-              <v-img
-                :src="getImage(item.img)"
-                :alt="`${item.img}`"
-                width="350"
-                class="ma-auto"
-              >
-                <v-expand-transition>
-                  <div
-                    v-if="hover"
-                    class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal display-3 white--text"
-                    style="height: 100%;"
-                  >
-                    $14.99
-                  </div>
-                </v-expand-transition>
-              </v-img>
-            </v-card>
-          </v-hover>
+            </v-img>
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <a :href="item.codeUrl" class="mx-2" target="_blank">
+                <v-avatar
+                  class="my-3"
+                  height="30"
+                  width="30"
+                  min-width="30"
+                  tile
+                >
+                  <v-img :src="getImage('github')"></v-img>
+                </v-avatar>
+              </a>
+              <a :href="item.viewUrl" class="mx-2" target="_blank">
+                <v-avatar
+                  class="my-3"
+                  height="30"
+                  width="30"
+                  min-width="30"
+                  tile
+                >
+                  <v-img :src="getImage('eye')"></v-img>
+                </v-avatar>
+              </a>
+            </v-card-actions>
+          </v-card>
         </div>
       </transition>
     </v-col>
@@ -59,12 +75,48 @@ export default {
   data() {
     return {
       projects: [
-        { name: 'WeatherApp', img: 'weather-app' },
-        { name: 'CurrencyExchange', img: 'currency-exchange' },
-        { name: 'Rock, Paper, Scissors', img: 'rock-paper-scissors' },
-        { name: 'BudgetApp', img: 'budget-app' },
-        { name: 'Tic, Tac, Toe', img: 'tic-tac-toe' },
-        { name: 'Basic Calculator', img: 'basic-calculator' }
+        {
+          name: 'WeatherApp',
+          img: 'weather-app',
+          codeUrl:
+            'https://github.com/willlymendoza/weather-app/tree/master/src',
+          viewUrl: 'https://weatherapp-by-willy.netlify.app/'
+        },
+        {
+          name: 'CurrencyExchange',
+          img: 'currency-exchange',
+          codeUrl:
+            'https://github.com/willlymendoza/currency-exchange/tree/master/src',
+          viewUrl: 'https://currency-exchange-by-willy.netlify.app/'
+        },
+        {
+          name: 'Rock, Paper, Scissors',
+          img: 'rock-paper-scissors',
+          codeUrl:
+            'https://github.com/willlymendoza/rock-paper-scissors/blob/master/app.js',
+          viewUrl: 'https://willlymendoza.github.io/rock-paper-scissors/'
+        },
+        {
+          name: 'BudgetApp',
+          img: 'budget-app',
+          codeUrl:
+            'https://github.com/willlymendoza/budgetApp/blob/master/src/index.js',
+          viewUrl: 'https://willlymendoza.github.io/budgetApp/'
+        },
+        {
+          name: 'Tic, Tac, Toe',
+          img: 'tic-tac-toe',
+          codeUrl:
+            'https://github.com/willlymendoza/tic-tac-toe/blob/master/src/index.js',
+          viewUrl: 'https://willlymendoza.github.io/tic-tac-toe/'
+        },
+        {
+          name: 'Basic Calculator',
+          img: 'basic-calculator',
+          codeUrl:
+            'https://github.com/willlymendoza/basic-calculator/blob/master/src/index.js',
+          viewUrl: 'https://willlymendoza.github.io/basic-calculator/'
+        }
       ],
       show: false
     }
@@ -82,11 +134,13 @@ export default {
 
 <style scoped>
 .v-card--reveal {
-  align-items: center;
   bottom: 0;
+  align-items: center;
   justify-content: center;
   opacity: 0.95;
   position: absolute;
   width: 100%;
+  font-size: calc(0.5em + 0.5vw) !important;
+  line-height: inherit;
 }
 </style>

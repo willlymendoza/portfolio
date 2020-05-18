@@ -26,6 +26,7 @@
         <a href="/" class="link-p">Resume</a>
       </div>
 
+      <!-- SOCIALS -->
       <div>
         <a
           v-for="item in social"
