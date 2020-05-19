@@ -24,6 +24,7 @@
             class="ma-auto dark_p"
             width="90%"
             max-width="350"
+            max-height="252"
             style="opacity: .9; background-color: initial!important;"
             elevation="0"
           >
@@ -34,12 +35,7 @@
               class="ma-auto grey-lighten-2"
             >
               <template v-slot:placeholder>
-                <v-row
-                  class="fill-height ma-0"
-                  align="center"
-                  justify="center"
-                  style="width: 100%;"
-                >
+                <v-row class="fill-height ma-0" align="center" justify="center">
                   <v-progress-circular
                     indeterminate
                     color="primary_p"
