@@ -39,7 +39,7 @@
                 <v-row class="fill-height ma-0" align="center" justify="center">
                   <v-progress-circular
                     indeterminate
-                    color="grey lighten-5"
+                    color="primary_p"
                   ></v-progress-circular>
                 </v-row>
               </template>
@@ -54,20 +54,7 @@
                   min-width="30"
                   tile
                 >
-                  <v-img :src="getImage('github')">
-                    <template v-slot:placeholder>
-                      <v-row
-                        class="fill-height ma-0"
-                        align="center"
-                        justify="center"
-                      >
-                        <v-progress-circular
-                          indeterminate
-                          color="grey lighten-5"
-                        ></v-progress-circular>
-                      </v-row>
-                    </template>
-                  </v-img>
+                  <v-img :src="getImage('github')"></v-img>
                 </v-avatar>
               </a>
               <a
@@ -83,21 +70,7 @@
                   min-width="30"
                   tile
                 >
-                  <v-img :src="getImage('eye')">
-                    <template v-slot:placeholder>
-                      <v-row
-                        class="fill-height ma-0"
-                        align="center"
-                        justify="center"
-                      >
-                        <v-progress-circular
-                          indeterminate
-                          color="grey lighten-5"
-                          width="20"
-                        ></v-progress-circular>
-                      </v-row>
-                    </template>
-                  </v-img>
+                  <v-img :src="getImage('eye')"></v-img>
                 </v-avatar>
               </a>
             </v-card-actions>
