@@ -31,15 +31,11 @@
               :src="getImage(item.img)"
               :alt="`${item.img}`"
               width="350"
+              :lazy-src="`https://picsum.photos/10/6`"
               class="ma-auto grey-lighten-2"
             >
               <template v-slot:placeholder>
-                <v-row
-                  class="ma-0"
-                  align="center"
-                  justify="center"
-                  style="height: 184px;"
-                >
+                <v-row class="ma-0" align="center" justify="center">
                   <v-progress-circular
                     indeterminate
                     color="primary_p"
