@@ -17,14 +17,6 @@
     <v-content>
       <!-- CONTENT -->
       <v-img :src="require(`~/static/background.png`)" style="height: 100vh;">
-        <template v-slot:placeholder>
-          <v-row class="fill-height ma-0" align="center" justify="center">
-            <v-progress-circular
-              indeterminate
-              color="primary_p"
-            ></v-progress-circular>
-          </v-row>
-        </template>
         <nuxt />
       </v-img>
     </v-content>
