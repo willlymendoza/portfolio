@@ -31,7 +31,6 @@
               :src="getImage(item.img)"
               :alt="`${item.img}`"
               width="350"
-              :lazy-src="`https://picsum.photos/10/6`"
               class="ma-auto grey-lighten-2"
             >
               <template v-slot:placeholder>
