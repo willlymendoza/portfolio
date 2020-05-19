@@ -32,8 +32,17 @@
               :alt="`${item.img}`"
               width="350"
               height=""
-              class="ma-auto"
+              :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
+              class="ma-auto grey-lighten-2"
             >
+              <template v-slot:placeholder>
+                <v-row class="fill-height ma-0" align="center" justify="center">
+                  <v-progress-circular
+                    indeterminate
+                    color="grey lighten-5"
+                  ></v-progress-circular>
+                </v-row>
+              </template>
             </v-img>
             <v-card-actions>
               <v-spacer></v-spacer>
