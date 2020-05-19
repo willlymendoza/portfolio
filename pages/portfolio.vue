@@ -30,9 +30,8 @@
             <v-img
               :src="getImage(item.img)"
               :alt="`${item.img}`"
-              width="350"
-              height="182"
-              :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
+              max-width="350"
+              max-height="182"
               class="ma-auto grey-lighten-2"
             >
               <template v-slot:placeholder>
