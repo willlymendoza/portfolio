@@ -30,13 +30,14 @@
             <v-img
               :src="getImage(item.img)"
               :alt="`${item.img}`"
-              max-width="350"
-              max-height="182"
+              width="350"
+              min-height="182"
               class="ma-auto grey-lighten-2"
             >
               <template v-slot:placeholder>
                 <v-row class="fill-height ma-0" align="center" justify="center">
                   <v-progress-circular
+                    width="100%"
                     indeterminate
                     color="primary_p"
                   ></v-progress-circular>
