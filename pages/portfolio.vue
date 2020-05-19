@@ -147,6 +147,18 @@ export default {
     getImage(name) {
       return require(`~/static/${name}.png`)
     }
+  },
+  head() {
+    return {
+      title: 'Portfolio',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Watch my recent personal proyects'
+        }
+      ]
+    }
   }
 }
 </script>

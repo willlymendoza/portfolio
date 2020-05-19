@@ -88,6 +88,18 @@ export default {
   },
   mounted() {
     this.show = true
+  },
+  head() {
+    return {
+      title: 'Skills',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'My personal skill set'
+        }
+      ]
+    }
   }
 }
 </script>

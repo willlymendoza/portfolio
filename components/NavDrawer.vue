@@ -22,9 +22,6 @@
           >{{ item.title }}</n-link
         >
       </div>
-      <div class="mb-7">
-        <a href="/" class="link-p">Resume</a>
-      </div>
 
       <!-- SOCIALS -->
       <div>
@@ -58,7 +55,8 @@ export default {
         { title: 'Home', link: 'index' },
         { title: 'About', link: 'about' },
         { title: 'Skills', link: 'skills' },
-        { title: 'Portfolio', link: 'portfolio' }
+        { title: 'Portfolio', link: 'portfolio' },
+        { title: 'Resume', link: 'resume' }
       ],
       social: [
         {

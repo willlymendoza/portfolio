@@ -51,6 +51,18 @@ export default {
   },
   mounted() {
     this.show = true
+  },
+  head() {
+    return {
+      title: 'About',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Read something about me'
+        }
+      ]
+    }
   }
 }
 </script>

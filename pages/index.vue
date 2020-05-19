@@ -31,6 +31,11 @@ export default {
   },
   mounted() {
     this.show = true
+  },
+  head() {
+    return {
+      title: 'Home'
+    }
   }
 }
 </script>

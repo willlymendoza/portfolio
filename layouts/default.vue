@@ -35,6 +35,18 @@ export default {
   },
   methods: {
     ...mapActions('drawer', ['changeDrawer'])
+  },
+  head() {
+    return {
+      titleTemplate: 'Willian Mendoza - %s',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'My personal portfolio'
+        }
+      ]
+    }
   }
 }
 </script>
