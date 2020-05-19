@@ -48,7 +48,12 @@
                   <v-img :src="getImage('github')"></v-img>
                 </v-avatar>
               </a>
-              <a :href="item.viewUrl" class="mx-2" target="_blank">
+              <a
+                v-if="item.viewUrl !== ''"
+                :href="item.viewUrl"
+                class="mx-2"
+                target="_blank"
+              >
                 <v-avatar
                   class="my-3"
                   height="30"
@@ -88,6 +93,13 @@ export default {
           codeUrl:
             'https://github.com/willlymendoza/currency-exchange/tree/master/src',
           viewUrl: 'https://currency-exchange-by-willy.netlify.app/'
+        },
+        {
+          name: 'PHP REST API',
+          img: 'larapi',
+          codeUrl:
+            'https://github.com/willlymendoza/larapi/blob/master/app/Http/Controllers/CurrencyController.php',
+          viewUrl: ''
         },
         {
           name: 'Rock, Paper, Scissors',

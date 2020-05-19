@@ -21,6 +21,9 @@
             >I have had the opportunity to work for local companies doing a
             full-stack job as a freelancer and I have worked with a group of
             developers for almost a year.
+            <strong class="primary_p--text subtitle-p">
+              This is detailed in my Resume.</strong
+            >
           </p>
           <p class="text_p">
             I really like learning new things and recently I started learning
