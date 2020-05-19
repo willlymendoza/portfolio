@@ -30,9 +30,7 @@
             <v-img
               :src="getImage(item.img)"
               :alt="`${item.img}`"
-              min-width="350"
-              min-height="207"
-              height=""
+              width="350"
               :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
               class="ma-auto grey-lighten-2"
             >
