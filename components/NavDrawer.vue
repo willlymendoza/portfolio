@@ -7,9 +7,11 @@
     class="back-nav"
   >
     <v-row class="flex-column py-5 mx-0" align="center">
-      <v-avatar height="80" width="80" min-width="50" tile>
-        <v-img :src="getImage('logo')"></v-img>
-      </v-avatar>
+      <n-link to="/">
+        <v-avatar height="80" width="80" min-width="50" tile>
+          <v-img :src="getImage('logo')"></v-img>
+        </v-avatar>
+      </n-link>
       <h1 class="title-p">Willian Mendoza</h1>
       <h2 class="mb-8 subtitle-p primary_p--text">Front-end Developer</h2>
 

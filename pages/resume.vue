@@ -1,7 +1,7 @@
 <template>
   <v-row class="fill-height mx-0 pa-md-5 pa-3 align-center justify-start">
     <v-col cols="12" md="8" class="mx-0 px-0">
-      <transition v-if="show" name="bounce-in-right" appear>
+      <transition v-if="show" name="fade-in-bottom" appear>
         <div>
           <h1
             class="title-p primary_p--text"

@@ -1,15 +1,13 @@
 <template>
   <v-row class="fill-height mx-0 pa-md-5 pa-3 align-center">
-    <v-row>
-      <v-col cols="4" class="mx-0 px-0 text-center">
-        <transition v-if="show" name="bounce-in-right" appear>
+    <transition v-if="show" name="fade-in-bottom" appear>
+      <v-row>
+        <v-col cols="4" class="mx-0 px-0 text-center">
           <h1
             class="title-p primary_p--text"
             style="font-size: calc(0.95em + 0.95vw)"
             >Front-end</h1
           >
-        </transition>
-        <transition v-if="show" name="bounce-in-bottom" appear>
           <div>
             <h2
               v-for="item in frontEnd"
@@ -19,18 +17,14 @@
               >{{ item }}</h2
             >
           </div>
-        </transition>
-      </v-col>
+        </v-col>
 
-      <v-col cols="4" class="mx-0 px-0 text-center">
-        <transition v-if="show" name="bounce-in-right" appear>
+        <v-col cols="4" class="mx-0 px-0 text-center">
           <h1
             class="title-p primary_p--text"
             style="font-size: calc(0.95em + 0.95vw)"
             >Back-end</h1
           >
-        </transition>
-        <transition v-if="show" name="bounce-in-bottom" appear>
           <div>
             <h2
               v-for="item in backEnd"
@@ -40,18 +34,14 @@
               >{{ item }}</h2
             >
           </div>
-        </transition>
-      </v-col>
+        </v-col>
 
-      <v-col cols="4" class="mx-0 px-0 text-center">
-        <transition v-if="show" name="bounce-in-right" appear>
+        <v-col cols="4" class="mx-0 px-0 text-center">
           <h1
             class="title-p primary_p--text"
             style="font-size: calc(0.95em + 0.95vw)"
             >Tools</h1
           >
-        </transition>
-        <transition v-if="show" name="bounce-in-bottom" appear>
           <div>
             <h2
               v-for="item in tools"
@@ -61,9 +51,9 @@
               >{{ item }}</h2
             >
           </div>
-        </transition>
-      </v-col>
-    </v-row>
+        </v-col>
+      </v-row>
+    </transition>
   </v-row>
 </template>
 
