@@ -43,16 +43,37 @@
               </template>
             </v-img>
             <v-card-actions>
+              <v-avatar
+                v-for="lang in item.languages"
+                :key="lang"
+                class="my-3 mx-1"
+                height="20"
+                width="20"
+                min-width="20"
+                tile
+              >
+                <v-tooltip top>
+                  <template v-slot:activator="{ on }">
+                    <v-img :src="getImage(lang)" v-on="on"></v-img>
+                  </template>
+                  <span>{{ lang }}</span>
+                </v-tooltip>
+              </v-avatar>
               <v-spacer></v-spacer>
               <a :href="item.codeUrl" class="mx-2" target="_blank">
                 <v-avatar
                   class="my-3"
-                  height="30"
-                  width="30"
-                  min-width="30"
+                  height="25"
+                  width="25"
+                  min-width="25"
                   tile
                 >
-                  <v-img :src="getImage('github')"></v-img>
+                  <v-tooltip top>
+                    <template v-slot:activator="{ on }">
+                      <v-img :src="getImage('github')" v-on="on"></v-img>
+                    </template>
+                    <span>code</span>
+                  </v-tooltip>
                 </v-avatar>
               </a>
               <a
@@ -63,12 +84,17 @@
               >
                 <v-avatar
                   class="my-3"
-                  height="30"
-                  width="30"
-                  min-width="30"
+                  height="25"
+                  width="25"
+                  min-width="25"
                   tile
                 >
-                  <v-img :src="getImage('eye')"></v-img>
+                  <v-tooltip top>
+                    <template v-slot:activator="{ on }">
+                      <v-img :src="getImage('eye')" v-on="on"></v-img>
+                    </template>
+                    <span>preview</span>
+                  </v-tooltip>
                 </v-avatar>
               </a>
             </v-card-actions>
@@ -92,49 +118,56 @@ export default {
           img: 'weather-app',
           codeUrl:
             'https://github.com/willlymendoza/weather-app/tree/master/src',
-          viewUrl: 'https://weatherapp-by-willy.netlify.app/'
+          viewUrl: 'https://weatherapp-by-willy.netlify.app/',
+          languages: ['html', 'css', 'javascript', 'vue', 'vuetify']
         },
         {
           name: 'CurrencyExchange',
           img: 'currency-exchange',
           codeUrl:
             'https://github.com/willlymendoza/currency-exchange/tree/master/src',
-          viewUrl: 'https://currency-exchange-by-willy.netlify.app/'
+          viewUrl: 'https://currency-exchange-by-willy.netlify.app/',
+          languages: ['html', 'css', 'javascript', 'vue', 'vuetify']
         },
         {
           name: 'PHP REST API',
           img: 'larapi',
           codeUrl:
             'https://github.com/willlymendoza/larapi/blob/master/app/Http/Controllers/CurrencyController.php',
-          viewUrl: ''
+          viewUrl: '',
+          languages: ['laravel']
         },
         {
           name: 'Rock, Paper, Scissors',
           img: 'rock-paper-scissors',
           codeUrl:
             'https://github.com/willlymendoza/rock-paper-scissors/blob/master/app.js',
-          viewUrl: 'https://willlymendoza.github.io/rock-paper-scissors/'
+          viewUrl: 'https://willlymendoza.github.io/rock-paper-scissors/',
+          languages: ['html', 'css', 'javascript']
         },
         {
           name: 'BudgetApp',
           img: 'budget-app',
           codeUrl:
             'https://github.com/willlymendoza/budgetApp/blob/master/src/index.js',
-          viewUrl: 'https://willlymendoza.github.io/budgetApp/'
+          viewUrl: 'https://willlymendoza.github.io/budgetApp/',
+          languages: ['html', 'css', 'javascript']
         },
         {
           name: 'Tic, Tac, Toe',
           img: 'tic-tac-toe',
           codeUrl:
             'https://github.com/willlymendoza/tic-tac-toe/blob/master/src/index.js',
-          viewUrl: 'https://willlymendoza.github.io/tic-tac-toe/'
+          viewUrl: 'https://willlymendoza.github.io/tic-tac-toe/',
+          languages: ['html', 'css', 'javascript']
         },
         {
           name: 'Basic Calculator',
           img: 'basic-calculator',
           codeUrl:
             'https://github.com/willlymendoza/basic-calculator/blob/master/src/index.js',
-          viewUrl: 'https://willlymendoza.github.io/basic-calculator/'
+          viewUrl: 'https://willlymendoza.github.io/basic-calculator/',
+          languages: ['html', 'css', 'javascript']
         }
       ],
       show: false
