@@ -138,35 +138,11 @@ export default {
           languages: ['laravel']
         },
         {
-          name: 'Rock, Paper, Scissors',
-          img: 'rock-paper-scissors',
-          codeUrl:
-            'https://github.com/willlymendoza/rock-paper-scissors/blob/master/app.js',
-          viewUrl: 'https://willlymendoza.github.io/rock-paper-scissors/',
-          languages: ['html', 'css', 'javascript']
-        },
-        {
           name: 'BudgetApp',
           img: 'budget-app',
           codeUrl:
             'https://github.com/willlymendoza/budgetApp/blob/master/src/index.js',
           viewUrl: 'https://willlymendoza.github.io/budgetApp/',
-          languages: ['html', 'css', 'javascript']
-        },
-        {
-          name: 'Tic, Tac, Toe',
-          img: 'tic-tac-toe',
-          codeUrl:
-            'https://github.com/willlymendoza/tic-tac-toe/blob/master/src/index.js',
-          viewUrl: 'https://willlymendoza.github.io/tic-tac-toe/',
-          languages: ['html', 'css', 'javascript']
-        },
-        {
-          name: 'Basic Calculator',
-          img: 'basic-calculator',
-          codeUrl:
-            'https://github.com/willlymendoza/basic-calculator/blob/master/src/index.js',
-          viewUrl: 'https://willlymendoza.github.io/basic-calculator/',
           languages: ['html', 'css', 'javascript']
         }
       ],
