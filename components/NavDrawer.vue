@@ -13,7 +13,7 @@
         </v-avatar>
       </n-link>
       <h1 class="title-p">Willian Mendoza</h1>
-      <h2 class="mb-8 subtitle-p primary_p--text">Front-end Developer</h2>
+      <h2 class="mb-8 subtitle-p primary_p--text">Software Engineer</h2>
 
       <div v-for="item in menu" :key="item.title" class="mb-7">
         <n-link

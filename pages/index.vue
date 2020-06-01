@@ -10,7 +10,7 @@
           class="subtitle-p secondary_p--text type-text"
           style="font-size: calc(0.8em + 0.8vw)"
         >
-          I'm a Front-End & Back-End Developer, Specialize In Front-End
+          I'm a Software Engineer, Specialize In Front-End
         </h2>
       </div>
     </transition>

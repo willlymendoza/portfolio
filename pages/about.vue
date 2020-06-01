@@ -26,11 +26,11 @@
             </p>
             <p class="text_p">
               I really like learning new things and recently I started learning
-              how to use Node.js with Express in order to create RESTFULL API'S.
+              how to use Node.js with Express in order to create RESTFUL API'S.
             </p>
             <p class="text_p">
-              I like to hep and learn from others, teamwork helps you to improve
-              and learn faster.
+              I like to help and learn from others, teamwork helps you to
+              improve and learn faster.
             </p>
           </div>
         </div>
