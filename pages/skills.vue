@@ -63,15 +63,17 @@ export default {
     return {
       frontEnd: [
         'HTML',
-        'CSS',
+        'CSS & SASS',
         'JAVASCRIPT',
         'JQUERY',
         'VUE.JS &',
         'NUXT.JS',
         'VUETIFY',
-        'BOOTSTRAP'
+        'BOOTSTRAP',
+        'REACT.JS',
+        'REDUX'
       ],
-      backEnd: ['PHP & LARAVEL', 'NODE.JS', 'MYSQL', 'MONGODB'],
+      backEnd: ['PHP & LARAVEL', 'NODE.JS', 'EXPRESS.JS', 'MYSQL', 'MONGODB'],
       tools: ['GIT & GITHUB', 'HEROKU', 'NETLIFY', 'VSCODE', 'NPM'],
       show: false
     }
