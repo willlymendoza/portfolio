@@ -12,9 +12,7 @@
             <p class="text_p"
               >I have been a software developer for about 4 years, I love giving
               optimal solutions to clients and creating software that provide a
-              good experience when using it. I am specialized in languages such
-              as HTML, CSS, JavaScript and Vue.js framework, but I have also had
-              experience working with Laravel(PHP) and MySQL.
+              good experience when using it.
             </p>
             <p class="text_p"
               >I have had the opportunity to work for local companies doing a
@@ -25,8 +23,7 @@
               >
             </p>
             <p class="text_p">
-              I really like learning new things and recently I started learning
-              how to use Node.js with Express in order to create RESTFUL API'S.
+              I really like learning new technologies.
             </p>
             <p class="text_p">
               I like to help and learn from others, teamwork helps you to
